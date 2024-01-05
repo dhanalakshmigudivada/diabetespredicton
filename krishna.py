@@ -51,10 +51,10 @@ else:
   print('The person is diabetic')
 
 # Save the trained model
-filename = 'trained_model.sav'
+filename = 'trained_model.pkl'
 pickle.dump(classifier, open(filename, 'wb'))
 
 # Load the saved model
-loaded_model = pickle.load(open('trained_model.sav', 'rb'))
+loaded_model = pickle.load(open('trained_model.pkl', 'rb'))
 
 
